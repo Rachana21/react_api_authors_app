@@ -25,7 +25,7 @@ def get_data_from_db(author_name):
 
             # If not we return an error message
             if not author_data:
-                abort(404, f"Author '{author_name}' does not exist in the database")
+                abort(404, f"Error 404: Author '{author_name}' does not exist in the database")
 
         # If author does exist/author not passed in, we return the top 10 best-selling authors
         topTenAuthorsQuery = '''SELECT a.name, SUM(s.item_price * s.quantity) AS total_sales
@@ -48,7 +48,7 @@ def get_data_from_db(author_name):
   
 @app.route('/api/author', defaults={'author': None})
 @app.route('/api/author/<author>')   
-def hello(author):
+def get_authors(author):
     authors = get_data_from_db(author)
     return jsonify(authors), 200
   
