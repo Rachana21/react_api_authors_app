@@ -28,7 +28,7 @@ The file contains three queries which returns:
 <details>
   <summary>Click to see output</summary>
   
-  ![Query output](/queryOutput.png)
+  ![Query output](/images/queryOutput.png)
 </details>
 
 ## Writing to an API endpoint
@@ -127,7 +127,7 @@ The commands above should launch a react application at the following link http:
 <details>
   <summary>Click to show React webpage</summary>
   
-  ![React Webpage](/reactWebpage.png)
+  ![React Webpage](/images/reactWebpage.png)
 </details>
 
 
