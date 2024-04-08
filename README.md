@@ -121,7 +121,7 @@ The commands above should launch a react application at the following link http:
 <details>
   <summary>Click to show React webpage</summary>
   
-  ![React Webpage](image_url)
+  ![React Webpage](/reactWebpage.png)
 </details>
 
 
