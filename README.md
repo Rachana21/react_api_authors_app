@@ -51,7 +51,7 @@ The Flask app will start running locally,which you can see at http://localhost:5
 
 
 <details>
-  <summary>Click to expand</summary>
+  <summary>Click to show output</summary>
 
   ```bash
 > curl http://localhost:5000/api/author
@@ -117,6 +117,13 @@ cd react-api-app
 npm start
 ```
 The commands above should launch a react application at the following link http://localhost:3000/react-api-authors-app .
+
+<details>
+  <summary>Click to show React webpage</summary>
+  
+  ![React Webpage](image_url)
+</details>
+
 
 ## Troubleshooting
 If any errors are seen related to ports 5000 or 3000 being in use, the following steps can be used to kill the corresponding processes.
