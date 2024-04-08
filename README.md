@@ -39,6 +39,7 @@ If the author's name is non-existent in the database, an error 404 is thrown sta
 #### 1) Install Flask
 ```
 pip install Flask
+pip install flask-cors
 ```
 #### 2) Run the Flask App
 ```
@@ -107,6 +108,9 @@ The Flask app will start running locally,which you can see at http://localhost:5
 To launch a react app that fetches data from the Flask API endpoint, we can follow the steps below. 
 - Before launching the react app, please confirm that the Flask API  from the previous step is still running. If it's not, relaunch the Flask API using the steps from the previous section.
 ```
+brew install node
+npm install -g create-react-app
+npm install react-scripts --save
 cd react-api-app
 npm start
 ```
