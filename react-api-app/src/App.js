@@ -15,30 +15,24 @@ const AuthorsComponent = () => {
         })
         .catch(error => console.error('Error fetching data:', error));
     }, []);
-  
-  // const authorImages = {
-  //   'Abigail Allan' : './pic.jpg',
-  // };
-
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Top Authors and Total Sales</h1>
-      <ul style={{ listStyleType: 'none', padding: 0 }}>
+    <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+      <h1 style={{ textAlign: 'center' }}>Ten Best-Selling Authors</h1>
+      <ul style={{ listStyleType: 'none', padding: 15, boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
         {authorsData.map((author, index) => (
-          <li key={index} style={{ margin: '10px 0', textAlign: 'left' }}>
-            <div style={{ display: 'flex', alignItems: 'center'}}>
-              <img src={pic} alt="Avatar" style={{ width: '50px', height: '50px', marginRight: '10px' }} />
-              {/* <img src={authorImages[author[0]]} alt="Avatar" style={{ width: '50px', height: '50px', marginRight: '10px' }} /> */}
-            <div>
-              <div>{author[0]}</div>
-              <div>Total Sales: {author[1]}</div>
+          <li key={index} style={{ margin: '10px', textAlign: 'center', borderBottom: '0.8px solid #e0eeee' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center'}}>
+              <img src={pic} alt="Avatar" style={{ width: '50px', height: '50px', marginRight: '25px' }} />
+              <div>
+                <div>{author[0]}</div>
+                <div>Total Sales: {author[1]}</div>
+              </div>
             </div>
-          </div>
-        </li>
-      ))}
-    </ul>
-</div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
