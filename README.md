@@ -25,6 +25,12 @@ The file contains three queries which returns:
 - The sales total for the author named "Lorelai Gilmore"
 - The top ten performaing authors ranked by sales revenue
 
+<details>
+  <summary>Click to see output</summary>
+  
+  ![Query output](/queryOutput.png)
+</details>
+
 ## Writing to an API endpoint
 The file ```app.py``` is a Flask API that optionally accepts an author’s name and
 returns a JSON response to the query:
