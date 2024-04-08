@@ -116,6 +116,13 @@ npm start
 ```
 The commands above should launch a react application at the following link http://localhost:3000/react-api-authors-app .
 
+## Troubleshooting
+If any errors are seen related to ports 5000 or 3000 being in use, the following steps can be used to kill the corresponding processes.
+```
+lsof -i :<port_number>
+kill <PID>
+```
+
 
 
 
