@@ -1,7 +1,7 @@
 
-## Introduction:
+## Introduction
 Creates a full-stack application where the Flask API serves as the backend that interacts with the SQLite database. The React frontend consumes data from the API to provide a user interface.
-## Getting started:
+## Getting started
 ```
 git clone https://github.com/Rachana21/react-api-authors-app.git
 cd react-api-authors-app
