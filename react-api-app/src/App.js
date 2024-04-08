@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import pic from './pic.jpg'
+import pic from './pic.jpeg'
 
 const AuthorsComponent = () => {
   const [authorsData, setAuthorsData] = useState([]);
