@@ -114,7 +114,7 @@ npm install react-scripts --save
 cd react-api-app
 npm start
 ```
-The commands above should launch a react application at the following link http://localhost:3001/react-api-authors-app .
+The commands above should launch a react application at the following link http://localhost:3000/react-api-authors-app .
 
 
 
